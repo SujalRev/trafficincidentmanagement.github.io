@@ -8,49 +8,59 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background: linear-gradient(135deg, #1e293b, #111827); /* Modern gradient background */
+    color: #e5e7eb; /* Light text color */
     margin: 0;
-    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligns content towards the top */
+    align-items: flex-start;
     min-height: 100vh;
 }
 
 /* Main Container */
 section {
-    background-color: white;
+    background-color: #1f2937; /* Dark gray for a tech feel */
     padding: 2rem;
     width: 90%;
     max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    border-radius: 12px; /* Softer rounded corners */
     text-align: center;
-    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+    margin-top: 30px;
+    border: 1px solid #374151; /* Subtle border */
 }
 
 /* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #2563eb; /* Professional blue */
+    color: #f3f4f6;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 header p {
     margin: 1rem 0 0;
+    font-size: 1.1rem;
+    color: #d1d5db; /* Lighter shade for subtitle */
 }
 
 /* Section Titles */
 h2 {
-    color: #4CAF50;
+    color: #60a5fa; /* Accent blue for headings */
     margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 /* List Items */
@@ -60,42 +70,58 @@ ul {
 }
 
 ul li {
-    background-color: #e7f7e7;
+    background-color: #374151; /* Slightly darker than the container */
     margin-bottom: 0.5rem;
-    padding: 0.75rem;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Links */
 a {
-    color: #4CAF50;
+    color: #60a5fa;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: #93c5fd;
     text-decoration: underline;
 }
 
 /* Definition List */
 dl dt {
     font-weight: bold;
-    color: #333;
+    color: #f3f4f6;
     margin-top: 1rem;
 }
 
 dl dd {
     margin-left: 1.5rem;
-    color: #666;
+    color: #9ca3af; /* Subtle text color */
 }
 
 /* Blockquote */
 blockquote {
     font-style: italic;
-    color: #555;
-    border-left: 4px solid #4CAF50;
+    color: #d1d5db;
+    border-left: 4px solid #60a5fa; /* Accent border */
     padding-left: 1rem;
     margin-top: 2rem;
+    background-color: #374151;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 /* Responsive Design */
@@ -106,5 +132,9 @@ blockquote {
 
     header {
         padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
     }
 }
